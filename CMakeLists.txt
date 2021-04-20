@@ -46,6 +46,7 @@ set(node_plugins "${node_plugins}usb_camera_driver::CameraDriver;$<TARGET_FILE:u
 
 add_executable(usb_camera_driver_node
   src/usb_camera_driver_node.cpp
+  include/usb_camera_driver.hpp
 )
 
 target_link_libraries(usb_camera_driver_node
